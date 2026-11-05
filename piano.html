@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Synthesizer</title>
+</head>
+<body>
+    <h1>Piano Synthesizer Component</h1>
+    <p><a href="index.html">Return to home</a>
+    
+    <h2>Ownership</h2>
+    <p>Ethan Loucks</p>
+
+    <section>
+        <h2>Summary</h2>
+        <p>
+            The piano component is built around 88 piano samples, representing the standard piano keys.
+            When a note is started by the Sequencer, the PianoInstrument plays the correct note and 
+            generates audio one frame at a time.
+        </p>
+        <p>
+            When the Synthesizer reads a note from the score, it registers the notes duration, velocity and pitch,
+            then prepares the WAV file for playback. When samples are first loaded, the implementation stores them
+            in a cache, saving the program from having to re-open the same WAV file.
+        </p>
+    </section>
+
+    <section>
+        <h2>Implemented Features:</h2>
+        <ul>
+            <li>All 88 standard piano keys.</li>
+            <li>Polyphony: Notes can be played simultaneously.</li>
+            <li>Envelope: Notes fade out after their duration.</li>
+            <li>Sustain Pedal: Notes continue when the pedal is down, fading out when lifted.</li>
+            <li>Velocity: Notes have a velocity that impacts volume.</li>
+            <li>Pedal Noise: A sample is played when the pedal is used.</li>
+        </ul>
+
+        <p>Demonstration of Piano Synthesizer component features: </p>
+        <audio controls>
+                <source src="files/Piano_Demonstration.wav" type="audio/wav">
+        </audio>
+            <p>Download:</p>
+            <ul>
+                <li>WAV: <a href="files/Piano_Demonstration.wav" download>Piano_Demonstration.wav</a></li>
+                <li>Score: <a href="files/Piano_Demonstration.score" download>Piano_Demonstration.score</a></li>
+            </ul>
+    </section>
+
+    <section>
+        <h2>Supported Grading Elements (40/50):</h2>
+        <ul>
+            <li>10 - Plays piano notes</li>
+            <li>20 - Envelope generation</li>
+            <li>30 - Pedal simulation</li>
+            <li>35 - Basic dynamics</li>
+            <li>40 - Pedal noise</li>
+        </ul>
+    </section>
+</body>
+</html>

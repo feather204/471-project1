@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 471 Project 1</title>
+</head>
+<body>
+    <header>
+        <h1>Project 1: Multi-Component Music Synthesizer</h1>
+        <h3>Ethan Loucks - Piano Synthesizer and Effects Component</h3>
+    </header>
+
+    <main>
+        <section>
+            <h2>Selection:</h2>
+            <p>The selection is Ode to Joy, generated with the piano component. The score was created by translating the original sheet music with assitance from Google Gemini.</p>
+        
+            <audio controls>
+                <source src="files/Ode_to_Joy.wav" type="audio/wav">
+            </audio>
+            <p>Download:</p>
+            <ul>
+                <li>WAV: <a href="files/Ode_to_Joy.wav" download>Ode_to_Joy.wav</a></li>
+                <li>Score: <a href="files/Ode_to_Joy.score" download>Ode_to_Joy.score</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Score File Formatting:</h2>
+            <p>The following is an example of the score file format:</p>
+        <pre><code>    &lt;score bpm="110" beatspermeasure="4"&gt;
+        &lt;instrument instrument="PianoInstrument"&gt;
+            &lt;note measure="1" beat="1" duration="1" note="E4" velocity="0.78" /&gt;
+        &lt;/instrument&gt;
+    &lt;/score&gt;</code></pre>
+
+            <p>There are also two special notes representing the pedal functions of the piano:</p>
+                <pre><code>    &lt;note measure="1" beat="1" duration="0" note="PedalDown" velocity="1" /&gt;
+    &lt;note measure="2" beat="1" duration="0" note="PedalUp" velocity="1" /&gt;
+                </code></pre>
+
+            <p>Attributes for the score format:</p>
+            <ul>
+                <li>bpm: Beats per minute.</li>
+                <li>beatspermeasure: Number of beats in a measure.</li>
+                <li>instrument: Type of instrument used.</li>
+                <li>measure: Measure in which the note begins.</li>
+                <li>beat: Beat in which the note begins.</li>
+                <li>duration: Length of the note.</li>
+                <li>note: Name of the note to use.</li>
+                <li>velocity: The volume the key is pressed at.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Components:</h2>
+            <ul>
+                <li><a href="piano.html">Piano Synthesizer</a></li>
+                <li><a href="effect.html">Effects Component</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

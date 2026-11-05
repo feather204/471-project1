@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="4">
+    <instrument instrument="PianoInstrument">
+        <note measure="1" beat="0.5" duration="0" note="PedalDown" />
+
+        <note measure="1" beat="1" duration="1.5" note="C3" velocity="0.30" />
+        <note measure="1" beat="1" duration="1" note="E4" velocity="0.45" />
+        <note measure="1" beat="2" duration="0.75" note="G4" velocity="0.60" />
+        <note measure="1" beat="3" duration="1.5" note="C5" velocity="0.85" />
+        <note measure="1" beat="3" duration="1.5" note="E5" velocity="0.90" />
+
+        <note measure="2" beat="1" duration="1" note="G3" velocity="0.35" />
+        <note measure="2" beat="1" duration="0.75" note="D4" velocity="0.50" />
+        <note measure="2" beat="2" duration="0.75" note="G4" velocity="0.60" />
+        <note measure="2" beat="3" duration="0.75" note="B4" velocity="0.75" />
+        <note measure="2" beat="4" duration="1" note="D5" velocity="0.85" />
+
+        <note measure="3" beat="0.5" duration="0" note="PedalUp" />
+
+        <note measure="3" beat="1" duration="1" note="C4" velocity="0.40" />
+        <note measure="3" beat="1" duration="1" note="E4" velocity="0.50" />
+        <note measure="3" beat="1" duration="1" note="G4" velocity="0.65" />
+        <note measure="3" beat="2" duration="0.75" note="C5" velocity="0.70" />
+        <note measure="3" beat="3" duration="0.75" note="D5" velocity="0.75" />
+        <note measure="3" beat="4" duration="1" note="E5" velocity="0.90" />
+
+        <note measure="4" beat="0.5" duration="0" note="PedalDown" />
+
+        <note measure="4" beat="1" duration="1.5" note="A3" velocity="0.35" />
+        <note measure="4" beat="1" duration="1" note="C4" velocity="0.45" />
+        <note measure="4" beat="1" duration="1" note="E4" velocity="0.60" />
+        <note measure="4" beat="2" duration="0.75" note="A4" velocity="0.70" />
+        <note measure="4" beat="3" duration="0.75" note="C5" velocity="0.80" />
+        <note measure="4" beat="4" duration="1.2" note="E5" velocity="0.90" />
+
+        <note measure="5" beat="1" duration="1.5" note="F3" velocity="0.30" />
+        <note measure="5" beat="1" duration="1" note="A3" velocity="0.50" />
+        <note measure="5" beat="1" duration="1" note="C4" velocity="0.65" />
+        <note measure="5" beat="2" duration="0.75" note="F4" velocity="0.65" />
+        <note measure="5" beat="3" duration="0.75" note="A4" velocity="0.80" />
+        <note measure="5" beat="4" duration="1" note="C5" velocity="0.90" />
+
+        <note measure="6" beat="0.5" duration="0" note="PedalUp" />
+
+        <note measure="6" beat="1" duration="2.5" note="C4" velocity="0.45" />
+        <note measure="6" beat="1" duration="2.5" note="E4" velocity="0.60" />
+        <note measure="6" beat="1" duration="2.5" note="G4" velocity="0.75" />
+        <note measure="6" beat="1" duration="2.5" note="C5" velocity="0.95" />
+    </instrument>
+</score>
